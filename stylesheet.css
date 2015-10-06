@@ -198,10 +198,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 }
 #siteTable .thing:first-child { padding-top: 20px }
 #siteTable .thing:hover { background: #F2F2F2 }
-#siteTable .thing .entry { overflow: visible; position: relative; padding-right: 15px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-left: 150px }
-@media (max-width:1150px) {
-    #siteTable .thing .entry { margin-left: 120px }
-}
+#siteTable .thing .entry { overflow: visible; position: relative; padding-right: 15px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .res #siteTable .thing .entry { padding: 4px 10px 10px 12px; border-radius: 3px }
 #siteTable .thing .entry .tagline { position: relative; top: 2px }
 #siteTable .thing .entry .expando-button, #siteTable .thing .entry .expando-button:hover, #siteTable .thing .entry .expando-button.expanded:hover, #siteTable .thing .entry .expando-button.expanded { background: url(%%expand%%) no-repeat !important; background-size: contain !important; width: 20px !important; height: 20px !important; transition: 150ms; margin-top: -0.5px }
