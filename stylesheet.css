@@ -191,7 +191,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 @media (max-width:1150px) {
     body>.content { margin-left: 0 !important }
 }
-#siteTable { padding-bottom: 45px }
+#siteTable { padding-bottom: 15px }
 #siteTable .thing { padding: 8px 20px; margin: 0 }
 @media (max-width:1150px) {
     #siteTable .thing { padding: 8px }
