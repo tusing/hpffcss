@@ -370,6 +370,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .commentarea .comment .comment { margin-left: 18px !important }
 .commentarea .expand { position: absolute; font-size: 0; left: 0; top: 0; bottom: 0; right: 0; margin-right: 0 }
 .commentarea .expand:hover { background: rgba(128, 128, 128, .1) }
+.footer-parent { position: relative; z-index: 2; }
 .footer-parent .footer { border-radius: 0; border: none; background: rgba(255, 255, 255, .1) }
 .footer-parent .footer a { color: #7D92B3 }
 .footer-parent .footer a:first-letter { text-transform: uppercase }
