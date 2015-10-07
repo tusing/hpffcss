@@ -239,7 +239,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
     60% { color: #FF4500 }
     100% { bottom: 38px; opacity: 0.0 }
 }
-.link .downmod:focus::after { content: "Nox."; font-size: 14px; margin-left: 1px; position: relative; color: #9494FF; bottom: -18px; opacity: 0.0; z-index: 102; -webkit-animation-name: exBn; -webkit-animation-duration: 3.0s; -webkit-animation-timing-function: ease-out; -webkit-animation-iteration-count: 1; -moz-animation-name: exBn; -moz-animation-duration: 3.0s; -moz-animation-timing-function: ease-out; -moz-animation-iteration-count: 1; animation-name: exBn; animation-duration: 3.0s; animation-timing-function: ease-out; animation-iteration-count: 1; animation-play-state: running }
+.downmod:focus::after { content: "Nox."; font-size: 14px; margin-left: 1px; position: relative; color: #9494FF; bottom: -18px; opacity: 0.0; z-index: 102; -webkit-animation-name: exBn; -webkit-animation-duration: 3.0s; -webkit-animation-timing-function: ease-out; -webkit-animation-iteration-count: 1; -moz-animation-name: exBn; -moz-animation-duration: 3.0s; -moz-animation-timing-function: ease-out; -moz-animation-iteration-count: 1; animation-name: exBn; animation-duration: 3.0s; animation-timing-function: ease-out; animation-iteration-count: 1; animation-play-state: running }
 @-webkit-keyframes "exBn" {
     0% { color: #a8a8ff }
     8% { bottom: -23px; opacity: 1.0 }
