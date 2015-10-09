@@ -188,7 +188,7 @@ span.pagename.redditname a:hover { opacity: 0.8 }
 .goldvertisement .inner a { -webkit-transition: background .3s; transition: background .3s; border: 1px solid #BFBFBF; background: #FAFAFA; padding: 3px 12px 2px; height: 16px; line-height: 16px; font-size: 0; margin: 0; color: #666; border-radius: 1px }
 .goldvertisement .inner a:hover, body>.content { background: #fff }
 .goldvertisement .inner a::before { content: "Support Reddit"; font-size: 9px }
-body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 0 35px !important; box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3); overflow: hidden }
+body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 20px 35px !important; box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3); overflow: hidden }
 @media (max-width:1150px) {
     body>.content { margin-left: 0 !important }
 }
