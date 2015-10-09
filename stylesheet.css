@@ -36,12 +36,13 @@ ul.tabmenu li a { letter-spacing: 1px; background: 0 0; color: #EEE; height: 100
     #header #header-bottom-left { right: 288px; left: 8px }
 }
 .submit-page #header #header-bottom-left { visibility: hidden }
-#header #header-bottom-left #header-img { background-image: url(%%spritesheet%%); visibility: visible; position: absolute; left: -40px; bottom: 115px; width: 64px; height: 64px; background-position: -184px -4px; margin-top: 10px; opacity: .8; -webkit-transition: opacity .2s; transition: opacity .2s }
+#header #header-bottom-left #header-img { z-index: 2; background-image: url(%%spritesheet%%); visibility: visible; position: absolute; left: -40px; bottom: 115px; width: 64px; height: 64px; background-position: -184px -4px; margin-top: 10px; opacity: .8; -webkit-transition: opacity .2s; transition: opacity .2s }
 @media (max-width:1150px) {
     #header #header-bottom-left #header-img { left: 4px }
 }
 #header #header-bottom-left #header-img:hover { opacity: 1 }
-span.pagename.redditname a { color: transparent; display: inline-block; visibility: visible; position: absolute; height: 80px; line-height: 80px; top: -80px; left: 0; width: 100%; background-image: url(%%sublogo%%); background-size: contain; background-position: center; background-repeat: no-repeat; position: absolute; opacity: 1 }
+span.pagename.redditname { position: absolute; top: -80px; z-index: 1; width: 100%; height: 80px; display: block; }
+span.pagename.redditname a { z-index: 1; color: transparent; display: inline-block; visibility: visible; position: relative; height: 80px; line-height: 80px; left: 0; width: 300px; background-image: url(%%sublogo%%); background-size: contain; background-position: center; background-repeat: no-repeat; opacity: 1 }
 span.pagename.redditname a:hover { opacity: 0.8 }
 .pagename { font-size: 0px }
 #header #header-bottom-right { position: absolute; top: 25px; bottom: initial; background: 0 0; margin: 10px 18px 10px 10px; padding: 0 }
