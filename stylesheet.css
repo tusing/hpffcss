@@ -15,7 +15,7 @@ button { padding: 6px 16px; border-radius: 0; background: rgba(255, 255, 255, .8
 .content input[type=email]:focus, .content input[type=password]:focus, .content input[type=text]:focus, .content input[type=url]:focus, .content textarea:focus, button:hover { background: rgba(0, 0, 0, .1) }
 .content input[type=email]:disabled, .content input[type=password]:disabled, .content input[type=text]:disabled, .content input[type=url]:disabled, .content textarea:disabled, button:disabled { background: rgba(0, 0, 0, .1); cursor: not-allowed }
 .content input[type=email]:active, .content input[type=password]:active, .content input[type=text]:active, .content input[type=url]:active, .content textarea:active, button:active { background: rgba(0, 0, 0, .2) }
-body { position: relative; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 210px 0 0; background: url(%%background%%) no-repeat #474f52; background-size: 100% auto; color: #444 }
+body { position: relative; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 160px 0 0; background: url(%%background%%) no-repeat #474f52; background-size: 100% auto; color: #444 }
 body::before { position: absolute; width: 100%; height: 100%; content: ""; background: url(%%tile%%); opacity: .4; top: 0 }
 .debuginfo { position: absolute; right: 10px; bottom: 10px }
 .flair, .linkflairlabel { margin: 0 4px 0 0; padding: 2px 8px; border-radius: 0; border: 1px solid #e7e7e7; font-size: 10px }
@@ -30,7 +30,7 @@ ul.tabmenu li.selected { border-bottom: 3px solid #9CD3E6 }
 ul.tabmenu li.selected a { background: 0 0; border: none; color: #FF5C72 !important }
 ul.tabmenu li a { letter-spacing: 1px; background: 0 0; color: #EEE; height: 100% }
 #noresults { text-align: center; width: 100%; padding: 80px; font-size: 25px; color: #BF4040 }
-#header { position: absolute; width: 100%; top: 0; background: 0 0; border-bottom: none; height: 210px; z-index: 2 }
+#header { position: absolute; width: 100%; top: 0; background: 0 0; border-bottom: none; height: 160px; z-index: 2 }
 #header #header-bottom-left { position: absolute; bottom: 0; left: 60px; right: 400px; background: rgba(50, 60, 70, .8); border-top-left-radius: 2px; border-top-right-radius: 2px; text-align: center; min-height: 48px; font-size: 0 }
 @media (max-width:1150px) {
     #header #header-bottom-left { right: 288px; left: 8px }
