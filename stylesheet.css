@@ -89,7 +89,7 @@ span.pagename.redditname a:hover { opacity: 0.8 }
 #header #sr-header-area .dropdown.srdrop .selected:hover, #header #sr-header-area a:hover { color: #DDD }
 #header #sr-header-area #RESShortcutsEditContainer, #header #sr-header-area #RESShortcutsEditContainer>* { background: 0 0; color: #AAA; height: 24px; line-height: 24px }
 #header #sr-header-area #RESShortcutsEditContainer>:hover { color: #DDD }
-.side { z-index: 1; min-width: 0; width: 340px; background: rgba(255, 255, 255, .8); -webkit-order: 10; -ms-flex-order: 10; order: 10; padding: 20px 25px; margin: 40px 35px 40px 0; right: 0; box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3); position: relative }
+.side { z-index: 1; min-width: 0; width: 340px; background: rgba(255, 255, 255, .8); -webkit-order: 10; -ms-flex-order: 10; order: 10; padding: 20px 25px; margin: 25px 35px 25px 0; right: 0; box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3); position: relative }
 @media (max-width:1150px) {
     .side { width: 280px; margin-right: 0 }
 }
