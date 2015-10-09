@@ -347,7 +347,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .commentarea .comment, .commentarea .comment .comment, .commentarea .comment .comment .comment, .commentarea .comment .comment .comment .comment { overflow: visible !important; border: none !important; background: 0 0 !important; padding: 0 !important; margin: 0 !important }
 .commentarea .comment .child, .commentarea .comment .comment .child, .commentarea .comment .comment .comment .child, .commentarea .comment .comment .comment .comment .child { margin-left: 20px; margin-top: 0; border-left: none }
 .commentarea .comment .comment .comment .comment.collapsed .entry, .commentarea .comment .comment .comment.collapsed .entry, .commentarea .comment .comment.collapsed .entry, .commentarea .comment.collapsed .entry { padding-bottom: 14px }
-.commentarea .comment .comment .comment .comment>.entry .tagline::before, .commentarea .comment .comment .comment>.entry .tagline::before, .commentarea .comment .comment>.entry .tagline::before, .commentarea .comment>.entry .tagline::before { content: ''; color: #222; font-weight: 700; padding-right: 12px; font-size: 14px; position: relative; display: inline-block; width: 10px }
+.commentarea .comment .comment .comment .comment>.entry .tagline::before, .commentarea .comment .comment .comment>.entry .tagline::before, .commentarea .comment .comment>.entry .tagline::before, .commentarea .comment>.entry .tagline::before { content: ''; color: #222; font-weight: 700; font-size: 14px; position: relative; display: inline-block; width: 10px }
 .commentarea .comment .comment .comment .comment>.entry .tagline:hover::before, .commentarea .comment .comment .comment>.entry .tagline:hover::before, .commentarea .comment .comment>.entry .tagline:hover::before, .commentarea .comment>.entry .tagline:hover::before { color: #888 }
 .commentarea .comment .comment .comment .comment.noncollapsed .entry .tagline::before, .commentarea .comment .comment .comment.noncollapsed .entry .tagline::before, .commentarea .comment .comment.noncollapsed .entry .tagline::before, .commentarea .comment.noncollapsed .entry .tagline::before { content: '–' }
 .commentarea .comment .comment .comment .comment.collapsed .entry .tagline::before, .commentarea .comment .comment .comment.collapsed .entry .tagline::before, .commentarea .comment .comment.collapsed .entry .tagline::before, .commentarea .comment.collapsed .entry .tagline::before { content: '+' }
@@ -365,8 +365,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .commentarea .comment .comment .comment .comment .entry .tagline .submitter, .commentarea .comment .comment .comment .entry .tagline .submitter, .commentarea .comment .comment .entry .tagline .submitter, .commentarea .comment .entry .tagline .submitter { color: #af882a }
 .commentarea .comment .comment .comment .comment .entry .tagline time::after, .commentarea .comment .comment .comment .entry .tagline time::after, .commentarea .comment .comment .entry .tagline time::after, .commentarea .comment .entry .tagline time::after { display: none }
 .commentarea .comment .comment { margin-left: 18px !important }
-.commentarea .expand { position: absolute; font-size: 0; left: 0; top: 0; bottom: 0; right: 0; margin-right: 0 }
-.commentarea .expand:hover { background: rgba(128, 128, 128, .1) }
+.commentarea .expand { display: inline-block; position: relative; font-size: 0; margin-left: -14px; top: -3px; width: 17px; height: 16px; }
 .footer-parent { position: relative; z-index: 2; }
 .footer-parent .footer { border-radius: 0; border: none; background: rgba(255, 255, 255, .1) }
 .footer-parent .footer a { color: #7D92B3 }
