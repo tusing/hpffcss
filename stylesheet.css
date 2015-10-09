@@ -221,44 +221,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .arrow.upmod { background-image: url(%%upvoted%%) }
 .arrow.up { background-image: url(%%upvote%%) }
 .arrow.down { background-image: url(%%downvote%%) }
-.upmod:focus::after { content: "Lumos!"; font-size: 14px; margin-left: 2px; position: relative; color: #C2185B; bottom: 18px; opacity: 0.0; z-index: 102; -webkit-animation-name: exAn; -webkit-animation-duration: 3.0s; -webkit-animation-timing-function: ease-out; -webkit-animation-iteration-count: 1; -moz-animation-name: exAn; -moz-animation-duration: 3.0s; -moz-animation-timing-function: ease-out; -moz-animation-iteration-count: 1; animation-name: exAn; animation-duration: 3.0s; animation-timing-function: ease-out; animation-iteration-count: 1; animation-play-state: running }
-@-webkit-keyframes "exAn" {
-    0% { color: #FF8C69 }
-    8% { bottom: 23px; opacity: 1.0 }
-    15% { bottom: 28px }
-    30% { color: #FF0000 }
-    50% { color: red; bottom: 33px }
-    60% { color: #FF4500 }
-    100% { bottom: 38px; opacity: 0.0 }
-}
-@keyframes "exAn" {
-    0% { color: #FF8C69 }
-    8% { bottom: 23px; opacity: 1.0 }
-    15% { bottom: 28px }
-    30% { color: #FF0000 }
-    50% { color: red; bottom: 33px }
-    60% { color: #FF4500 }
-    100% { bottom: 38px; opacity: 0.0 }
-}
-.downmod:focus::after { content: "Nox."; font-size: 14px; margin-left: 1px; position: relative; color: #9494FF; bottom: -18px; opacity: 0.0; z-index: 102; -webkit-animation-name: exBn; -webkit-animation-duration: 3.0s; -webkit-animation-timing-function: ease-out; -webkit-animation-iteration-count: 1; -moz-animation-name: exBn; -moz-animation-duration: 3.0s; -moz-animation-timing-function: ease-out; -moz-animation-iteration-count: 1; animation-name: exBn; animation-duration: 3.0s; animation-timing-function: ease-out; animation-iteration-count: 1; animation-play-state: running }
-@-webkit-keyframes "exBn" {
-    0% { color: #a8a8ff }
-    8% { bottom: -23px; opacity: 1.0 }
-    15% { bottom: -28px }
-    30% { color: #bbbbff }
-    50% { color: red; bottom: -33px }
-    60% { color: #cfcfff }
-    100% { bottom: -38px; opacity: 0.0 }
-}
-@keyframes "exBn" {
-    0% { color: #a8a8ff }
-    8% { bottom: -23px; opacity: 1.0 }
-    15% { bottom: -28px }
-    30% { color: #bbbbff }
-    50% { color: red; bottom: -33px }
-    60% { color: #cfcfff }
-    100% { bottom: -38px; opacity: 0.0 }
-}
+
 .link .upmod:focus:after { white-space: nowrap }
 .link .downmod:focus:after { white-space: nowrap }
 .midcol { overflow: visible }
