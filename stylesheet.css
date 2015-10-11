@@ -1,7 +1,41 @@
 button, input:focus, textarea:focus { outline: 0 }
 #hsts_pixel, #jumpToContent, .listing-chooser, .sidebox.create .spacer, .trending-subreddits { display: none }
 button, ul.tabmenu li a { text-transform: uppercase }
-#header #header-bottom-left .redditname a, .goldvertisement h2, .md, .side .titlebox h1.redditname, .submit-page div.content form.content button[type=submit], body { font-family: helvetica, verdana, arial, sans-serif }
+#header #header-bottom-left .redditname a, .goldvertisement h2, .md, .side .titlebox h1.redditname, .submit-page div.content form.content button[type=submit], body { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
+/** EXPERIMENTAL: FOG AND MIST **/
+html:not(:lang(na)) body::before {
+	content: "";
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(%%fog%%);
+	background-size: auto 400px;
+	background-position: 0 0;
+	opacity: 0;
+	animation: fog 100s linear infinite;
+}
+
+@keyframes fog {
+	0% {
+		background-position: 0% 0%;
+		opacity: 0;
+	}
+	1% {
+		background-position: 1% 0%;
+		opacity: 1;
+	}
+	99% {
+		background-position: 99% 0%;
+		opacity: 1;
+	}
+	100% {
+		background-position: 100% 0%;
+		opacity: 0;
+	}
+}
+/** END EXPERIMENT **/
 * { box-sizing: border-box; -moz-box-sizing: border-box }
 #tb-bottombar, #tb-bottombar *, .RESDialogSmall.livePreview *, .goldvertisement .inner a, button { box-sizing: content-box }
 .spacer { margin: 0 !important }
@@ -273,7 +307,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .gold-accent.comment-visits-box { margin: 0; padding: 0 40px }
 .gold-accent.comment-visits-box select { border-color: rgba(0, 0, 0, .1); margin-left: 10px }
 .gold-accent { background-color: #fffdcc; border: solid 1px rgba(0, 0, 0, .1); border-bottom: 0; border-left: 0; border-radius: 0 }
-.comment-visits-box .title { font-family: arial, helvetica, sans-serif; line-height: 34px }
+.comment-visits-box .title { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", arial, helvetica, sans-serif; line-height: 34px }
 @media (min-width:1150px) {
 	.thing:hover .entry { padding-right: 110px }
 }
@@ -415,7 +449,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .wiki-page .pageactions { margin: 0; width: 100%; border-right: none; border-left: none; text-align: center; padding: 0; height: 50px; border-radius: 0; background: #FAFAFA }
 .wiki-page .pageactions a.wikiaction { margin: 0; border-radius: 0; width: 90px; padding: 0; text-align: center; text-transform: uppercase; font-weight: 300; height: 50px; line-height: 50px }
 .wiki-page .wiki-page-content { padding: 20px 100px 100px; width: 100%; margin: 0; font-size: 12px }
-.wiki-page .wiki-page-content em, .wiki-page .wiki-page-content li, .wiki-page .wiki-page-content p { font-size: 12px; font-family: helvetica, verdana, arial, sans-serif }
+.wiki-page .wiki-page-content em, .wiki-page .wiki-page-content li, .wiki-page .wiki-page-content p { font-size: 12px; font-family:"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
 .wiki-page .wiki-page-content em { color: #999 }
 .wiki-page .wiki-page-content .wiki>.toc>ul { background: #FAFAFA; border: 1px solid #BBB; font-size: 13px; max-width: 400px; padding: 16px 34px }
 .wiki-page .wiki-page-content .wiki>.toc>ul ul { border-left: 1px solid #CCC }
