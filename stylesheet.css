@@ -2,39 +2,16 @@ button, input:focus, textarea:focus { outline: 0 }
 #hsts_pixel, #jumpToContent, .listing-chooser, .sidebox.create .spacer, .trending-subreddits { display: none }
 button, ul.tabmenu li a { text-transform: uppercase }
 #header #header-bottom-left .redditname a, .goldvertisement h2, .md, .side .titlebox h1.redditname, .submit-page div.content form.content button[type=submit], body { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
+
 /** EXPERIMENTAL: FOG AND MIST **/
-html:not(:lang(na)) body::before {
-	content: "";
-	width: 100%;
-	height: 400px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background-image: url(%%fog%%);
-	background-size: auto 400px;
-	background-position: 0 0;
-	opacity: 0;
-	animation: fog 100s linear infinite;
+html:not(:lang(na)) body::before { content: ""; width: 100%; height: 400px; position: absolute; left: 0; top: 0; background-image: url(%%fog%%); background-size: auto 400px; background-position: 0 0; opacity: 0; animation: fog 100s linear infinite; }
+@keyframes fog {
+	0% { background-position: 0% 0%; opacity: 0; }
+	1% { background-position: 1% 0%; opacity: 1; }
+	99% { background-position: 99% 0%; opacity: 1; }
+	100% { background-position: 100% 0%; opacity: 0; }
 }
 
-@keyframes fog {
-	0% {
-		background-position: 0% 0%;
-		opacity: 0;
-	}
-	1% {
-		background-position: 1% 0%;
-		opacity: 1;
-	}
-	99% {
-		background-position: 99% 0%;
-		opacity: 1;
-	}
-	100% {
-		background-position: 100% 0%;
-		opacity: 0;
-	}
-}
 /** END EXPERIMENT **/
 * { box-sizing: border-box; -moz-box-sizing: border-box }
 #tb-bottombar, #tb-bottombar *, .RESDialogSmall.livePreview *, .goldvertisement .inner a, button { box-sizing: content-box }
@@ -52,7 +29,44 @@ button { padding: 6px 16px; border-radius: 0; background: rgba(255, 255, 255, .8
 body { position: relative; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 160px 0 0; background: url(%%background%%) no-repeat #474f52; background-size: 100% auto; color: #444 }
 body::before { position: absolute; width: 100%; height: 100%; content: ""; background: url(%%tile%%); opacity: .4; top: 0 }
 .debuginfo { position: absolute; right: 10px; bottom: 10px }
-.flair, .linkflairlabel { margin: 0 4px 0 0; padding: 2px 8px; border-radius: 0; border: 1px solid #e7e7e7; font-size: 10px }
+.linkflairlabel { margin: 0 4px 0 0; padding: 2px 8px; border-radius: 0; border: 1px solid #e7e7e7; font-size: 10px }
+
+/* DEFAULT FLAIR  STYLE
+.flair, .linkflairlabel { margin: 0 4px 0 0; padding: 2px 8px; border-radius: 0; border: 1px solid #e7e7e7; font-size: 10px } 
+*/
+
+/* USE OLD CSS IMAGE FLAIRS  - EXPERIMENTAL */
+.flair { text-indent: 23px; margin-right: 3px; min-width: 23px; height: 23px; display: inline-block; background-repeat: no-repeat; background-image: url(%%crests%%); background-position: left center; vertical-align: top; border-width: 0; padding: 0; background-color: transparent }
+.flair-GR, .flair-GRH { background-position: 0 -26px; }
+.flair-SL, .flair-SLH { background-position: 0 -97px; }
+.flair-HF, .flair-HFH { background-position: 0 -50px; }
+.flair-RV, .flair-RVH { background-position: 0 -73px; }
+.flair-DM { font-weight: bold; background-position: 0 -2px; color: #F70418 }
+.flair-GRH { font-weight: bold; color: #901006 }
+.flair-SLH { font-weight: bold; color: #09540E }
+.flair-HFH { font-weight: bold; color: #E3B000 }
+.flair-RVH { font-weight: bold; color: #0f1752 }
+.flair-GRP { background-position: 0 -307px; }
+.flair-SLP { background-position: 0 -377px; }
+.flair-HFP { background-position: 0 -330px; }
+.flair-RVP { background-position: 0 -354px; }
+.flair-CTKR { background-position: 0 -97px; font-weight: bold; color: #330099 }
+.flair-GRQ, .flair-GRJV { background-position: 0 -213px; }
+.flair-GRQC { background-position: 0 -120px; }
+.flair-HFQ { background-position: 0 -236px; }
+.flair-HFQC { background-position: 0 -143px; }
+.flair-RVQ { background-position: 0 -260px; }
+.flair-RVQC { background-position: 0 -167px; }
+.flair-SLQ { background-position: 0 -282px; }
+.flair-SLQC { background-position: 0 -189px; }
+.flair-GRPRF { background-position: 0 -400px; }
+.flair-SLPRF { background-position: 0 -470px; }
+.flair-HFPRF { background-position: 0 -424px; }
+.flair-RVPRF { background-position: 0 -447px; }
+.flair-SANTA { background-position: 0 -497px; }
+.flair-HAT { background-position: 0 -522px; }
+
+/* END EXPERIMENT */
 .side .flair { border-color: #BBB }
 .menuarea { text-align: center; border-bottom: none; padding-top: 12px }
 ul.tabmenu, ul.tabmenu li { margin: 0; display: inline-block }
@@ -85,7 +99,7 @@ span.pagename.redditname a:hover { opacity: 0.8 }
 #header #header-bottom-right #userbarToggle { border-radius: 0; background: rgba(60, 60, 60, .8); -webkit-transition: background .2s, color .2s; transition: background .2s, color .2s; border: none; width: 40px; left: -40px; text-align: center; line-height: 35px; padding: 0; font-size: 40px; font-weight: 100; color: #DDD }
 #header #header-bottom-right #userbarToggle:hover { color: #FFF; background: rgba(60, 60, 60, .9) }
 #header #header-bottom-right.res-navTop { background: rgba(40, 40, 40, .3); margin-right: 0; height: 40px; line-height: 40px; font-size: 11px; font-weight: 100 }
-#header #header-bottom-right.res-navTop * {font-weight: 400 }
+#header #header-bottom-right.res-navTop * { font-weight: 400 }
 #header #header-bottom-right.res-navTop a, #header #header-bottom-right.res-navTop a:visited { color: #fff }
 #header #header-bottom-right.res-navTop .separator { margin: 0 10px; width: 1px; height: 100%; text-indent: 10px; background: #999 }
 #header #header-bottom-right.res-navTop .message-count { border-radius: 0; width: 30px; text-align: center; font-size: 12px; margin-left: 6px }
@@ -166,7 +180,6 @@ span.pagename.redditname a:hover { opacity: 0.8 }
 .side .titlebox .subButtons { text-align: center; margin: 12px 0 }
 .side .titlebox .subButtons span.RESshortcut, .side .titlebox .subButtons span.REStoggle { display: inline-block; padding: 4px 12px; width: auto; width: initial; border-radius: 0; border: 1px solid #BBB; background: rgba(255, 255, 255, .4); font-weight: 100; text-transform: uppercase; -webkit-transition: background .2s; transition: background .2s; margin-bottom: 12px; color: #555 }
 .side .titlebox .subButtons span.RESshortcut:hover, .side .titlebox .subButtons span.REStoggle:hover { background: rgba(255, 255, 255, .8) }
-
 .side .titlebox .users-online { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 11px; text-transform: uppercase; }
 #siteTable .thing .entry .report-action-form .reason-prompt:first-letter, .goldvertisement .inner a, .goldvertisement h2, .side .account-activity-box, .side .titlebox .usertext h2, .thing .entry .flat-list.buttons, .thing .entry .flat-list.buttons li.first { text-transform: uppercase }
 .side .titlebox .users-online .number { margin-right: 4px }
@@ -450,7 +463,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .wiki-page .pageactions { margin: 0; width: 100%; border-right: none; border-left: none; text-align: center; padding: 0; height: 50px; border-radius: 0; background: #FAFAFA }
 .wiki-page .pageactions a.wikiaction { margin: 0; border-radius: 0; width: 90px; padding: 0; text-align: center; text-transform: uppercase; font-weight: 300; height: 50px; line-height: 50px }
 .wiki-page .wiki-page-content { padding: 20px 100px 100px; width: 100%; margin: 0; font-size: 12px }
-.wiki-page .wiki-page-content em, .wiki-page .wiki-page-content li, .wiki-page .wiki-page-content p { font-size: 12px; font-family:"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
+.wiki-page .wiki-page-content em, .wiki-page .wiki-page-content li, .wiki-page .wiki-page-content p { font-size: 12px; font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
 .wiki-page .wiki-page-content em { color: #999 }
 .wiki-page .wiki-page-content .wiki>.toc>ul { background: #FAFAFA; border: 1px solid #BBB; font-size: 13px; max-width: 400px; padding: 16px 34px }
 .wiki-page .wiki-page-content .wiki>.toc>ul ul { border-left: 1px solid #CCC }
