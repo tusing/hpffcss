@@ -4,7 +4,12 @@ button, ul.tabmenu li a { text-transform: uppercase }
 #header #header-bottom-left .redditname a, .goldvertisement h2, .md, .side .titlebox h1.redditname, .submit-page div.content form.content button[type=submit], body { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
 
 /** EXPERIMENTAL: FOG AND MIST **/
+
+/*
 html:not(:lang(na)) body::before { content: ""; width: 100%; height: 400px; position: absolute; left: 0; top: 0; background-image: url(%%fog%%); background-size: auto 400px; background-position: 0 0; opacity: 0; animation: fog 100s linear infinite; }
+*/
+
+html:not(:lang(na)) body::before { content: ""; width: 100%; height: 400px; position: absolute; left: 0; top: 0; background-image: url(%%fog%%), url(%%mist%%); background-size: auto 400px, 5760px 400px; background-position: 0 0, 0 100; opacity: 0; animation: fog 45s linear infinite; }
 @keyframes fog {
 	0% { background-position: 0% 0%; opacity: 0; }
 	1% { background-position: 1% 0%; opacity: 1; }
@@ -484,7 +489,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .linkflair-req .linkflairlabel { background: #9dd29e }
 .linkflair-meta .linkflairlabel { background: #f1b9ba }
 .linkflair-misc .linkflairlabel { background: #aac4df }
-.linkflair-sug .linkflairlabel{background: #FFCCBC }
+.linkflair-sug .linkflairlabel { background: #FFCCBC }
 .titlebox form.toggle { background: none }
 .titlebox .tagline { text-align: center; max-height: 50px }
 .side .tagline { color: transparent }
@@ -500,9 +505,8 @@ li .flairselector .flairoptionpane ul .linkflair a.title, li .flairselector .fla
 
 /* EXPERIMENTAL: USER FLAIR SELECTION DROPDOWN MOD */
 .flairselector.drop-choices.active h2 { margin-bottom: 14px; font-weight: 300; color: #333; text-transform: capitalize; font-size: 14px; background: 0 0 }
+
 /* END EXPERIMENT */
-
-
 #userTaggerToolTip { border-radius: 0; height: auto; height: initial !important }
 #userTaggerToolTip h3 { height: 40px; background: #FAFAFA; color: #444; font-weight: 300 }
 #userTaggerToolTip #userTaggerClose { border-radius: 0 }
