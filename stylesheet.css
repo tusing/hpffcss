@@ -26,7 +26,7 @@ button { padding: 6px 16px; border-radius: 0; background: rgba(255, 255, 255, .8
 .content input[type=email]:focus, .content input[type=password]:focus, .content input[type=text]:focus, .content input[type=url]:focus, .content textarea:focus, button:hover { background: rgba(0, 0, 0, .1) }
 .content input[type=email]:disabled, .content input[type=password]:disabled, .content input[type=text]:disabled, .content input[type=url]:disabled, .content textarea:disabled, button:disabled { background: rgba(0, 0, 0, .1); cursor: not-allowed }
 .content input[type=email]:active, .content input[type=password]:active, .content input[type=text]:active, .content input[type=url]:active, .content textarea:active, button:active { background: rgba(0, 0, 0, .2) }
-body { position: relative; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 160px 0 0; background: url(%%background%%) no-repeat #474f52; background-position: 0px -150px; background-size: 100% auto; color: #444 }
+body { position: relative; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 160px 0 0; background: url(%%background%%) no-repeat #474f52; background-size: 100% auto; color: #444 }
 body::before { position: absolute; width: 100%; height: 100%; content: ""; background: url(%%tile%%); opacity: .4; top: 0 }
 .debuginfo { position: absolute; right: 10px; bottom: 10px }
 
