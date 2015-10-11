@@ -29,14 +29,13 @@ button { padding: 6px 16px; border-radius: 0; background: rgba(255, 255, 255, .8
 body { position: relative; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 160px 0 0; background: url(%%background%%) no-repeat #474f52; background-size: 100% auto; color: #444 }
 body::before { position: absolute; width: 100%; height: 100%; content: ""; background: url(%%tile%%); opacity: .4; top: 0 }
 .debuginfo { position: absolute; right: 10px; bottom: 10px }
-.linkflairlabel { margin: 0 4px 0 0; padding: 2px 8px; border-radius: 0; border: 1px solid #e7e7e7; font-size: 10px }
 
-/* DEFAULT FLAIR  STYLE
+/* DEFAULT SLIQUE FLAIR  STYLE
 .flair, .linkflairlabel { margin: 0 4px 0 0; padding: 2px 8px; border-radius: 0; border: 1px solid #e7e7e7; font-size: 10px } 
 */
 
 /* USE OLD CSS IMAGE FLAIRS  - EXPERIMENTAL */
-.flair { text-indent: 23px; margin-right: 3px; min-width: 23px; height: 23px; display: inline-block; background-repeat: no-repeat; background-image: url(%%crests%%); background-position: left center; vertical-align: top; border-width: 0; padding: 0; background-color: transparent }
+.flair, .linkflairlabel { text-indent: 23px; margin-right: 3px; min-width: 23px; height: 23px; display: inline-block; background-repeat: no-repeat; background-image: url(%%crests%%); background-position: left center; vertical-align: top; border-width: 0; padding: 0; background-color: transparent }
 .flair-GR, .flair-GRH { background-position: 0 -26px; }
 .flair-SL, .flair-SLH { background-position: 0 -97px; }
 .flair-HF, .flair-HFH { background-position: 0 -50px; }
@@ -479,12 +478,13 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .flair-settings+.tabmenu li.selected a { color: #B92035 !important }
 .flair-settings+.tabmenu li:hover { background: rgba(0, 0, 0, .1) }
 .flair-settings+.tabmenu li:hover a { color: #333 }
-.linkflair-promo .linkflairlabel, .linkflair-discussion .linkflairlabel, .linkflair-req .linkflairlabel, .linkflair-meta .linkflairlabel, .linkflair-misc .linkflairlabel { color: white; font-size: 12px; padding: 2px 8px 2px 8px; box-sizing: border-box; border-radius: 0px; text-transform: uppercase }
+.linkflair-promo .linkflairlabel, .linkflair-discussion .linkflairlabel, .linkflair-req .linkflairlabel, .linkflair-meta .linkflairlabel, .linkflair-misc .linkflairlabel, .linkflair-sug .linkflairlabel { color: white; font-size: 12px; padding: 2px 8px 2px 8px; box-sizing: border-box; border-radius: 0px; text-transform: uppercase }
 .linkflair-promo .linkflairlabel { background: #f1b9ba }
 .linkflair-discussion .linkflairlabel { background: #bea2d8 }
 .linkflair-req .linkflairlabel { background: #9dd29e }
 .linkflair-meta .linkflairlabel { background: #eed1b7 }
 .linkflair-misc .linkflairlabel { background: #aac4df }
+.linkflair-sug .linkflairlabel{background: #FFCCBC }
 .titlebox form.toggle { background: none }
 .titlebox .tagline { text-align: center; max-height: 50px }
 .side .tagline { color: transparent }
