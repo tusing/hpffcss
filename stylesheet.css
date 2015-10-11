@@ -431,7 +431,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .footer-parent .footer .col .title { color: #CCC; text-transform: uppercase; font-weight: 100; font-size: 14px; text-align: center; padding-bottom: 4px; margin-bottom: 10px; border-bottom: 1px solid #777 }
 .submit-page div.content { text-align: center; padding-top: 34px; padding-bottom: 50px }
 .submit-page div.content .md { color: #666 }
-.submit-page div.content input, .submit-page div.content textarea { border: 1px solid #DFDFDF; font-size: 16px; text-align: center }
+.submit-page div.content input, .submit-page div.content textarea { border: 1px solid #DFDFDF; font-size: 16px; text-align: left }
 .submit-page div.content>h1 { border-bottom: 1px solid #DDD; padding-bottom: 4px; font-size: 30px; font-weight: 100; text-transform: capitalize; width: 95%; margin: 0 auto 10px }
 .submit-page div.content form.content { margin: 0; width: 100%; max-width: 700px; display: inline-block }
 .submit-page div.content form.content .formtabs-content { width: 100%; text-align: center; border: none }
@@ -497,6 +497,7 @@ li .flairselector .linkflair { text-align: center }
 li .flairselector .flairoptionpane ul { width: 100% }
 li .flairselector .flairoptionpane ul>li, li .flairselector .flairselection .linkflair { padding: 6px }
 li .flairselector .flairoptionpane ul .linkflair a.title, li .flairselector .flairselection .linkflair a { display: inline !important }
+
 #userTaggerToolTip { border-radius: 0; height: auto; height: initial !important }
 #userTaggerToolTip h3 { height: 40px; background: #FAFAFA; color: #444; font-weight: 300 }
 #userTaggerToolTip #userTaggerClose { border-radius: 0 }
