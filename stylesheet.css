@@ -498,6 +498,11 @@ li .flairselector .flairoptionpane ul { width: 100% }
 li .flairselector .flairoptionpane ul>li, li .flairselector .flairselection .linkflair { padding: 6px }
 li .flairselector .flairoptionpane ul .linkflair a.title, li .flairselector .flairselection .linkflair a { display: inline !important }
 
+/* EXPERIMENTAL: USER FLAIR SELECTION DROPDOWN MOD */
+.flairselector.drop-choices.active h2 { margin-bottom: 14px; font-weight: 300; color: #333; text-transform: capitalize; font-size: 14px; background: 0 0 }
+/* END EXPERIMENT */
+
+
 #userTaggerToolTip { border-radius: 0; height: auto; height: initial !important }
 #userTaggerToolTip h3 { height: 40px; background: #FAFAFA; color: #444; font-weight: 300 }
 #userTaggerToolTip #userTaggerClose { border-radius: 0 }
