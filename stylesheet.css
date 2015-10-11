@@ -166,14 +166,15 @@ span.pagename.redditname a:hover { opacity: 0.8 }
 .side .titlebox .subButtons { text-align: center; margin: 12px 0 }
 .side .titlebox .subButtons span.RESshortcut, .side .titlebox .subButtons span.REStoggle { display: inline-block; padding: 4px 12px; width: auto; width: initial; border-radius: 0; border: 1px solid #BBB; background: rgba(255, 255, 255, .4); font-weight: 100; text-transform: uppercase; -webkit-transition: background .2s; transition: background .2s; margin-bottom: 12px; color: #555 }
 .side .titlebox .subButtons span.RESshortcut:hover, .side .titlebox .subButtons span.REStoggle:hover { background: rgba(255, 255, 255, .8) }
-.side .titlebox .users-online { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; text-transform: capitalize }
+
+.side .titlebox .users-online { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 11px; text-transform: uppercase; }
 #siteTable .thing .entry .report-action-form .reason-prompt:first-letter, .goldvertisement .inner a, .goldvertisement h2, .side .account-activity-box, .side .titlebox .usertext h2, .thing .entry .flat-list.buttons, .thing .entry .flat-list.buttons li.first { text-transform: uppercase }
 .side .titlebox .users-online .number { margin-right: 4px }
 .side .titlebox .users-online::before { background: #50914e; border-radius: 50%; height: 10px; width: 10px; display: inline-block }
 .side .titlebox form.flairtoggle { background: 0 0 }
 .side .titlebox .users-online, .side .titlebox form.flairtoggle { color: #555; font-size: 11px }
 .side .titlebox>.tagline { padding: 8px 12px; display: table; margin: 10px auto 24px; background: rgba(255, 255, 255, .4); border: 1px solid #CCC }
-.side .titlebox .subscribers { display: block; text-align: center; margin-bottom: 18px; float: right; color: #777; font-size: 11px }
+.side .titlebox .subscribers { display: block; text-align: center; margin-bottom: 18px; float: right; color: #777; font-size: 11px; text-transform: uppercase; }
 .side .titlebox .leavemoderator, .side .titlebox form.leavecontributor-button { background: #FAFAFA; padding: 12px; font-size: 11px; border: 1px solid #BBB }
 .side .titlebox .leavemoderator { margin-top: 12px; border-bottom: none }
 .side .titlebox form.leavecontributor-button { margin-bottom: 12px; border-top: none }
