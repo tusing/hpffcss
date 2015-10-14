@@ -3,21 +3,6 @@ button, input:focus, textarea:focus { outline: 0 }
 button, ul.tabmenu li a { text-transform: uppercase }
 #header #header-bottom-left .redditname a, .goldvertisement h2, .md, .side .titlebox h1.redditname, .submit-page div.content form.content button[type=submit], body { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", helvetica, verdana, arial, sans-serif }
 
-/** EXPERIMENTAL: FOG AND MIST **/
-
-/*
-html:not(:lang(na)) body::before { content: ""; width: 100%; height: 400px; position: absolute; left: 0; top: 0; background-image: url(%%fog%%); background-size: auto 400px; background-position: 0 0; opacity: 0; animation: fog 100s linear infinite; }
-*/
-
-html:not(:lang(na)) body::before { content: ""; width: 100%; height: 400px; position: absolute; left: 0; top: 0; background-image: url(%%fog%%), url(%%mist%%); background-size: auto 400px, 5760px 400px; background-position: 0 0, 0 100; opacity: 0; animation: fog 45s linear infinite; }
-@keyframes fog {
-	0% { background-position: 0% 0%; opacity: 0; }
-	1% { background-position: 1% 0%; opacity: 1; }
-	99% { background-position: 99% 0%; opacity: 1; }
-	100% { background-position: 100% 0%; opacity: 0; }
-}
-
-/** END EXPERIMENT **/
 * { box-sizing: border-box; -moz-box-sizing: border-box }
 #tb-bottombar, #tb-bottombar *, .RESDialogSmall.livePreview *, .goldvertisement .inner a, button { box-sizing: content-box }
 .spacer { margin: 0 !important }
