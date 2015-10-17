@@ -230,12 +230,12 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 	body>.content { margin-left: 0 !important }
 }
 #siteTable { padding-bottom: 15px }
-#siteTable .thing { padding: 8px 20px; margin: 0 }
+#siteTable .thing { padding: 2px 20px; margin: 0 }
 @media (max-width:1150px) {
 	#siteTable .thing { padding: 8px }
 }
 #siteTable .thing:first-child { padding-top: 20px }
-#siteTable .thing:hover { background: #F2F2F2 }
+#siteTable .thing:hover { background: #FAFAFA }
 #siteTable .thing .entry { overflow: visible; position: relative; padding-right: 15px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .res #siteTable .thing .entry { padding: 4px 10px 10px 12px; border-radius: 3px }
 #siteTable .thing .entry .tagline { position: relative; top: 2px }
