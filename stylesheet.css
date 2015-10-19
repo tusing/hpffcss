@@ -1,3 +1,12 @@
+/* Spoiler tags */
+a[href$="/spoiler"] {  
+background: #000 !important;  
+color: #000 !important  
+}  
+a[href$="/spoiler"]:hover {  
+color: #FFF !important  
+} 
+
 button, input:focus, textarea:focus { outline: 0 }
 #hsts_pixel, #jumpToContent, .listing-chooser, .sidebox.create .spacer, .trending-subreddits { display: none }
 button, ul.tabmenu li a { text-transform: uppercase }
