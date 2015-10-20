@@ -1,6 +1,6 @@
 # hpffcss
 
-/r/hpfanfiction new stylesheet. [Test here.](https://www.reddit.com/r/hpfanficcsstest/)
+[/r/HPfanfiction](https://www.reddit.com/r/HPfanfiction/)'s new stylesheet. [Test here.](https://www.reddit.com/r/hpfanficcsstest/)
 
 Based off of [Slique](https://www.reddit.com/r/slique) [(GitHub)](https://github.com/leb2/slique), [(CSS)](https://raw.githubusercontent.com/leb2/slique/master/slique.css)
 
