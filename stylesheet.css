@@ -361,7 +361,7 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 	.moderator.listing-page .flat-list.buttons li.share+li+li+li { right: 47px }
 	.moderator.listing-page .flat-list.buttons li.share+li+li+li::after { background-position: -30px -80px }
 	.content .infobar { border: 1px solid #DDD; background: #FAFAFA; margin: 15px auto 0; max-width: 500px; width: 100%; text-align: center }
-	.content .nav-buttons { height: 50px; line-height: 50px; text-align: right; padding-right: 30px; position: absolute; bottom: 0; width: 100% }
+	.content .nav-buttons { height: 50px; line-height: 50px; text-align: right; padding-right: 30px; position: absolute; bottom: 0; right: 0; }
 	.content .nav-buttons .next-suggestions a::before, .content .nav-buttons .nextprev a { border-radius: 0; padding: 4px 12px; font-weight: 100; color: #444; height: 24px; line-height: 24px; border: 1px solid #AAA; background: #FAFAFA; -webkit-transition: background .3s; transition: background .3s }
 	.content .nav-buttons .next-suggestions a:hover::before, .content .nav-buttons .nextprev a:hover { background: #CCC }
 	.content .nav-buttons .next-suggestions a:active::before, .content .nav-buttons .nextprev a:active { background: #BBB }
@@ -477,11 +477,12 @@ body>.content { z-index: 3; position: relative; border-radius: 2px; margin: 0 0 
 .flair-settings+.tabmenu li.selected a { color: #B92035 !important }
 .flair-settings+.tabmenu li:hover { background: rgba(0, 0, 0, .1) }
 .flair-settings+.tabmenu li:hover a { color: #333 }
-.linkflair-promo .linkflairlabel, .linkflair-discussion .linkflairlabel, .linkflair-req .linkflairlabel, .linkflair-meta .linkflairlabel, .linkflair-misc .linkflairlabel, .linkflair-sug .linkflairlabel { color: white; font-size: 12px; padding: 2px 8px 2px 8px; box-sizing: border-box; border-radius: 0px; text-transform: uppercase }
+.linkflair-promo .linkflairlabel, .linkflair-discussion .linkflairlabel, .linkflair-req .linkflairlabel, .linkflair-meta .linkflairlabel, .linkflair-wiki .linkflairlabel, .linkflair-misc .linkflairlabel, .linkflair-sug .linkflairlabel { color: white; font-size: 12px; padding: 2px 8px 2px 8px; box-sizing: border-box; border-radius: 0px; text-transform: uppercase }
 .linkflair-promo .linkflairlabel { background: #eed1b7 }
 .linkflair-discussion .linkflairlabel { background: #bea2d8 }
 .linkflair-req .linkflairlabel { background: #9dd29e }
 .linkflair-meta .linkflairlabel { background: #f1b9ba }
+.linkflair-wiki .linkflairlabel { background: #f1b9ba }	
 .linkflair-misc .linkflairlabel { background: #aac4df }
 .linkflair-sug .linkflairlabel { background: #FFCCBC }
 .titlebox form.toggle { background: none }
